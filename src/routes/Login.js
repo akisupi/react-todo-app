@@ -46,7 +46,7 @@ const Login = () => {
               padding: "10px",
               fontSize: "1.5rem",
               marginBottom: "10px",
-              width: "400px",
+              width: "300px",
             }}
           />
           <br />
@@ -54,8 +54,8 @@ const Login = () => {
             style={{
               fontSize: "2rem",
               backgroundColor: "grey",
-              width: "400px",
-              padding: "5PX",
+              width: "300px",
+              padding: "5px",
             }}
           >
             Login
