@@ -1,10 +1,17 @@
 import React from "react";
+import styles from "../styles/Header.module.css";
 
-const TodosAppHeader = () => {
+const TodosAppHeader = (props) => {
+  const headerStyle = {
+    padding: "20px 0",
+    lineHeight: "1.5em",
+    color: "#aeadad",
+    textAlign: "center",
+  };
+
   return (
-    <header>
-      <h1>Welcome, Moses!</h1>
-      <p>Find your tasks today...</p>
+    <header style={headerStyle} className={styles.header}>
+      {props.children}
     </header>
   );
 };

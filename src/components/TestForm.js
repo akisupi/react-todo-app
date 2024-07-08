@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const testForm = () => {
+const TestForm = () => {
   const [name, setName] = useState({
     firstName: "",
     lastName: "",

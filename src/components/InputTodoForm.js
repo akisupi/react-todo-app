@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { GoArrowRight } from "react-icons/go";
 
 const InputTodoForm = ({ handleAddTodoItem }) => {
   const [todoTitle, setTodoTitle] = useState("");
-  const [warning, setWarning] = useState('');
+  const [warning, setWarning] = useState("");
 
   const handleTodoTitle = (e) => {
     setTodoTitle(() => e.target.value);
@@ -14,7 +15,7 @@ const InputTodoForm = ({ handleAddTodoItem }) => {
     if (todoTitle.trim()) {
       handleAddTodoItem(todoTitle);
       setTodoTitle("");
-      setWarning('');
+      setWarning("");
     } else {
       setWarning("Todo cannot be empty");
     }
@@ -22,16 +23,19 @@ const InputTodoForm = ({ handleAddTodoItem }) => {
 
   return (
     <>
-      <form onSubmit={handleTitleSubmit}>
+      <form onSubmit={handleTitleSubmit} className="form-container">
         <input
           type="text"
           placeholder="Add todo..."
           value={todoTitle}
           onChange={handleTodoTitle}
+          className="input-text"
         />
-        <button>Submit</button>
+        <button className="input-submit">
+          <GoArrowRight />
+        </button>
       </form>
-      <span>{warning}</span>
+      <span className="submit-warning">{warning}</span>
     </>
   );
 };

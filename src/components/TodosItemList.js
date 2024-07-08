@@ -4,7 +4,7 @@ import React from "react";
 import TodoItem from "./TodoItem";
 
 // This component holds a list of todo items
-const TodosItemList = ({ todos, handleChange, deleteTodoItem }) => {
+const TodosItemList = ({ todos, handleChange, deleteTodoItem, setUpdate }) => {
   return (
     <>
       {todos.map((todo) => (
@@ -13,6 +13,7 @@ const TodosItemList = ({ todos, handleChange, deleteTodoItem }) => {
           todo={todo}
           handleChange={handleChange}
           deleteTodoItem={deleteTodoItem}
+          setUpdate={setUpdate}
         />
       ))}
     </>
