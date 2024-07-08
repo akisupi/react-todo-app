@@ -21,7 +21,7 @@ const Login = () => {
   };
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div>
       <TodosAppHeader>
         <h1>Login</h1>
       </TodosAppHeader>
