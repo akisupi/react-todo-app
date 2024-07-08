@@ -22,7 +22,7 @@ const TodoItem = ({ todo, handleChange, deleteTodoItem, setUpdate }) => {
   };
 
   let viewMode = {};
-  let editMode = {};
+  let editMode = { padding: "5px", outLine: "none", width: "100%" };
   if (editing) {
     viewMode.display = "none";
   } else {
@@ -53,11 +53,11 @@ const TodoItem = ({ todo, handleChange, deleteTodoItem, setUpdate }) => {
           </span>
           {user && (
             <button onClick={handleEditing}>
-              <AiFillEdit style={{ color: "#5e5e5e", fontSize: "16px" }} />
+              <AiFillEdit style={{ color: "#82b4e3", fontSize: "16px" }} />
             </button>
           )}
           <button onClick={() => deleteTodoItem(todo.id)}>
-            <IoTrashOutline style={{ color: "#5e5e5e", fontSize: "16px" }} />
+            <IoTrashOutline style={{ color: "#ea9393", fontSize: "16px" }} />
           </button>
         </div>
         <input

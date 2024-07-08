@@ -153,7 +153,10 @@ const TodosAppNavbar = () => {
       {user && (
         <div className="logout">
           <p>{user}</p>
-          <button onClick={handleLogout} style={{ fontSize: "12pt" }}>
+          <button
+            onClick={handleLogout}
+            style={{ fontSize: "12pt", color: "#ea9393" }}
+          >
             <AiOutlineLogout />
             Logout
           </button>
