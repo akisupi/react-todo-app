@@ -21,20 +21,45 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <TodosAppHeader>
         <h1>Login</h1>
       </TodosAppHeader>
-      <div className={styles.formWrapper}>
-        <form className={styles.form} onSubmit={handleSubmit}>
+      <div
+        className={styles.formWrapper}
+        style={{ textAlign: "center", padding: "40px" }}
+      >
+        <form
+          className={styles.form}
+          onSubmit={handleSubmit}
+          style={{
+            padding: "45px 20px",
+            texmargin: "0 auto",
+          }}
+        >
           <input
             type="text"
             placeholder="username"
             value={username}
             onChange={(e) => setUsername(() => e.target.value)}
+            style={{
+              padding: "10px",
+              fontSize: "1.5rem",
+              marginBottom: "10px",
+              width: "400px",
+            }}
           />
           <br />
-          <button>Login</button>
+          <button
+            style={{
+              fontSize: "2rem",
+              backgroundColor: "grey",
+              width: "400px",
+              padding: "5PX",
+            }}
+          >
+            Login
+          </button>
         </form>
       </div>
     </div>
