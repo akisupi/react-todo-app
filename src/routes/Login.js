@@ -33,8 +33,9 @@ const Login = () => {
           className={styles.form}
           onSubmit={handleSubmit}
           style={{
-            padding: "45px 20px",
+            padding: "30px 20px",
             texmargin: "0 auto",
+            textAlign: "center",
           }}
         >
           <input
